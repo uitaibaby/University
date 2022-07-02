@@ -3,21 +3,6 @@ public class University {
     int yearOfFoundation;
     StudyProfile mainProfile;
 
-    enum StudyProfile {
-        mathematic("Математик"),
-        physic("Физик"),
-        radioman("Радист");
-
-        private String title;
-
-        StudyProfile(String title) {
-            this.title = title;
-        }
-        public String getTitle() {
-            return title;
-        }
-    }
-
     public University(String id, String fullName, String shortName, int yearOfFoundation, StudyProfile mainProfile) {
         this.id = id;
         this.fullName = fullName;
